@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Toeti</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/faviocn2.jpeg">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/cb1cace6d3.js" crossorigin="anonymous"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+<!-- navbar section -->
+<!-- navbar -->
+<nav id="navbar" class="navbar">
+    <img src="images/logowarungtoeti2.png" alt="Logo">
+    
+    <div class="navbar-nav">
+        <a href="index.html#home"> Home </a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+
+        <!-- Dropdown Menu for Products -->
+        <div class="dropdown">
+            <button class="dropbtn" style="text-shadow: 1px 1px 2px black;"> Product <i class="fa-solid fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="menunasi.html">Nasi Kotak</a>
+                <a href="menutumpeng.html">Tumpeng</a>
+                <a href="menukudapan.html">Kudapan</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar-extra">
+        <a href="menukudapan.html" id="shopping-cart"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="index.html#contact" id="customer-support"><i class="fa-solid fa-headset"></i></a>
+    </div>
+</nav>
+
+<!-- javascrip navbar -->
+<script type="text/javascript">
+    var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", function(){
+        var scrollTop = window.pageYOffset || document
+            .documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+            navbar.style.top='-80px';
+        } else {
+            navbar.style.top="0";
+        }
+            lastScrollTop = scrollTop;
+    })
+</script>
+<!-- navbar end -->
+
+<!-- header section -->
+    <section class="header-kudapan">
+        <p></p>
+    </section>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Back to Home</a>
+        </div>
+    </header>
+<!-- header section end -->
+
+<!-- product section -->
+<div class="menu-page">
+    <aside class="sidebar">
+        <h3>Semua Menu</h3>
+        <ul>
+            <li><i class="fa-solid fa-tags" style="color: #296630;"> </i><a href="menunasi.html">Nasi Kotak </a></li>
+            <li><i class="fa-solid fa-tags" style="color: #296630;"> </i><a href="menukudapan.html">Snack Box </a></li>
+            <li><i class="fa-solid fa-tags" style="color: #296630;"> </i><a href="menukudapan.html">Kudapan </a></li>
+            <li><i class="fa-solid fa-tags" style="color: #296630;"> </i><a href="menukudapan.html">Tampah Snack </a></li>
+            <li><i class="fa-solid fa-tags" style="color: #296630;"> </i><a href="menutumpeng.html">Tumpeng </a></li>
+            <li><i class="fa-solid fa-tags" style="color: #296630;"> </i><a href="menutumpeng.html">Liwetan Nasi </a></li>
+        </ul>
+    </aside>
+
+    <main class="menu-content">
+        <h2>Nasi Kotak</h2>
+        <p>Nikmati aneka pilihan nasi kotak yang dibuat dari resep kuliner daerah. Sempurnakan acara Anda dengan sensai kuliner Nusantara. Menu yang dipersembahkan dalam versi Nasi Kotak Warung Toeti adalah Nasi Kuning, Nasi Liwet, Nasi Bakar, Nasi Uduk, Nasi Mandi.</p>
+
+
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/nasibox4.jpg" alt="Nasi Kotak Paket A">
+                <div class="details">
+                    <h4>Nasi Kotak Paket A</h4>
+                    <p>Rp20.000</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/nasibox3.jpg" alt="Nasi Kotak Paket B">
+                <div class="details">
+                    <h4>Nasi Kotak Paket B</h4>
+                    <p>Rp25.000</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/nasibox1.jpg" alt="Nasi Kotak Paket C">
+                <div class="details">
+                    <h4>Nasi Mandhi</h4>
+                    <p>Rp25.000</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="images/nasibox.jpg" alt="Snack Box Isi 3">
+                <div class="details">
+                    <h4>Nasi Kotak Premium</h4>
+                    <p>Rp30.000</p>
+                    <p style="font-size: 8px;">*harga sesuai lauk</p>
+                </div>
+            </div>
+        </div>
+
+    <br>    
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/nasibox2.jpg" alt="Snack Box Isi 2 Promo 6">
+                <div class="details">
+                    <h4>Nasi Kuning </h4>
+                    <p>Rp30.000</p>
+                    <p style="font-size: 8px;">*harga sesuai isian</p>
+                </div>
+            </div>
+<!-- product section end -->
+
+
+<!-- javascript -->
+<script src="script.js"></script>
+<!-- javascript -->
+
+</body>
+</html>

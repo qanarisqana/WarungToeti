@@ -1,0 +1,247 @@
+:root {
+    --primary: #527853;
+    --bg: #FEF9D9;
+    --secc:#ff9545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ga perlu ngatur border utk padding*/
+    outline: none; /*style untuk form button*/
+    border: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #000; 
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0; /*supaya berada diatas*/
+    left: 0; /*tarik kanan kiri*/
+    right: 0;
+    z-index: 1100;
+}
+.navbar img {
+    height: 50px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+.navbar-nav a {
+    color: #ffff;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black;
+}
+.navbar-nav a:hover {
+    color: var(--secc);
+    transition: 0.2s linear;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative; 
+    display: inline-block; 
+}
+.dropdown .dropbtn {
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    color: #fff; 
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color: rgba(82, 120, 83, 0.9);
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    z-index: 1; 
+}
+.dropdown-content a {
+    font-size: 1rem;
+    color: #fff; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+    text-align: left; 
+}
+.dropdown-content a:hover {
+    background-color: #99c29a94;
+}
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+/* ekstra navbar */
+.navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.7rem;
+    font-size: 25px; 
+}
+.navbar .navbar-extra a:hover {
+    color: var(--secc);
+    transition: 0.3s linear;
+}
+
+/* Menu Kudapan HTML */
+/* styling untuk html menu */
+.header-kudapan {
+    min-height: 90vh;
+    width: 100%;
+    background-image: url(images/headermenu.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+}
+header {
+    background-color:var(--primary);
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo a {
+    font-size: 1.2;
+    font-weight: bold;
+    color: var(--secc);
+    text-decoration: none;
+    margin-left: 5%;
+}
+
+/* bagian menu */
+.menu-page {
+    display: flex;
+}
+
+.sidebar {
+    border-right: 1px solid #e0e0d1;
+    width: 200px;
+    background-color: #faa25e;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-size: 1.2rem;
+    color: #3a4920;
+    margin-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 100vh;
+    color: #fff;
+    word-spacing: 2px;
+}
+.sidebar ul i{
+    word-spacing: 2px;
+}
+
+.sidebar ul li a:hover{
+    color: #3a4920;
+    text-decoration: underline;
+}
+
+/* bagian menu */
+.menu-content {
+    width: 80%;
+    padding: 20px;
+    padding-bottom: 10%;
+}
+
+.menu-content h2 {
+    font-size: 1.5rem;
+    color: #556b2f;
+    margin-bottom: 10px;
+}
+
+.menu-content p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.menu-item:hover, .active{
+    background: #dfdfdd;
+    color: #ff4500;
+    border-radius: 1rem;
+    transition: all 0.6s ease;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 41px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #e0e0d1;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-item img {
+    width: 250px;
+    height: 250px;
+}
+
+.menu-item .details {
+    padding: 10px;
+}
+
+.menu-item h4 {
+    font-size: 1rem;
+    margin: 10px 0 10px;
+    margin-top: 5px;
+}
+
+.menu-item p {
+    color: #2e8b57;
+    font-weight: bold;
+    line-height: 0;
+}
+
+.new-badge {
+    display: inline-block;
+    background-color: #ff4500;
+    color: white;
+    padding: 2px 5px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Toeti</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/faviocn2.jpeg">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/cb1cace6d3.js" crossorigin="anonymous"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- navbar section -->
+<!-- navbar -->
+<nav id="navbar" class="navbar">
+    <img src="images/logowarungtoeti2.png" alt="Logo">
+    
+    <div class="navbar-nav">
+        <a href="index.html#home"> Home </a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#contact">Contact</a>
+
+        <!-- Dropdown Menu for Products -->
+        <div class="dropdown">
+            <button class="dropbtn" style="text-shadow: 1px 1px 2px black;"> Product <i class="fa-solid fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="menunasi.html">Nasi Kotak</a>
+                <a href="menutumpeng.html">Tumpeng</a>
+                <a href="menukudapan.html">Kudapan</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar-extra">
+        <a href="menukudapan.html" id="shopping-cart"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="index.html#contact" id="customer-support"><i class="fa-solid fa-headset"></i></a>
+    </div>
+</nav>
+
+<!-- javascrip navbar -->
+<script type="text/javascript">
+    var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", function(){
+        var scrollTop = window.pageYOffset || document
+            .documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+            navbar.style.top='-80px';
+        } else {
+            navbar.style.top="0";
+        }
+            lastScrollTop = scrollTop;
+    })
+</script>
+<!-- navbar end -->
+
+
+<!-- Artikel 1 -->
+<section class="judul-tumpeng">
+    <p> Layanan Catering</p>
+    <h2>Aneka Tumpeng & Liwetan</h2>
+    <h3><i>Rasakan Kelezatan Budaya dalam Setiap Suapan! Nikmati Hidangan Tumpeng dan Liwetan Autentik Kami yang Akan Membuat Acara Anda Berkesan dan Lezat.
+    </i></h3>
+</section>
+
+<header>
+    <div class="logo">
+        <a href="index.html#layanan"><i class="fa-solid fa-house"></i> Back to Home</a>
+    </div>
+</header>
+
+<div class="content-artikel"> 
+    <h1>Nikmati Kelezatan Sejati dari Warung Toeti: Tumpeng Tradisional dan Liwetan yang Menggugah Selera!</h1>
+
+    <div class="gambar-artikel"> 
+        <thead> 
+            <tr>
+                <td> <img src="images/tumpeng(1).jpg" alt="kue" width="300x" height="200px" style="border-radius: 5%;"></td>
+                <td> <img src="images/nasiliwet2.jpg" alt="kue" width="300px" height="200px" style="border-radius: 5%;"></td>
+            </tr>
+        </thead>
+    </div>
+
+    <p>
+        Apakah Anda sedang merencanakan sebuah acara istimewa yang membutuhkan sentuhan kelezatan dan keindahan budaya Indonesia? Warung Toeti hadir untuk mewujudkan harapan Anda dengan jasa catering nasi tumpeng tradisional dan menu liwetan yang akan membuat setiap momen berharga Anda semakin istimewa.
+        <br>
+        
+        <strong>Tradisional: Simbol Kebahagiaan dan Keberkahan </strong> <br>
+        Tumpeng tradisional merupakan salah satu simbol penting dalam budaya Indonesia. Sebagai lambang kebahagiaan, keberkahan, dan rasa syukur, tumpeng telah menjadi bagian tak terpisahkan dari berbagai acara seperti ulang tahun, pernikahan, khitanan, dan acara-acara spesial lainnya. Warung Toeti menghadirkan kelezatan tumpeng tradisional dengan cita rasa otentik yang akan menghangatkan hati dan perut Anda serta para tamu undangan.
+    <br>
+        Dipersiapkan dengan penuh cinta dan keahlian, tumpeng tradisional dari Warung Toeti memiliki bentuk yang menawan dan bervariasi. Tersedia berbagai pilihan lauk-pauk lezat, mulai dari ayam suwir, rendang sapi, ikan bakar, telur balado, tempe orek, dan masih banyak lagi. Dengan tampilan yang cantik dan berwarna-warni, tumpeng kami tidak hanya akan memanjakan lidah, tetapi juga mata.
+        <br>
+
+        <strong>Liwetan: Kelezatan Beramai-ramai </strong> <br>
+        Ingin merasakan kehangatan suasana keluarga dalam sebuah acara besar? Menu liwetan dari Warung Toeti adalah pilihan yang sempurna. Liwetan merupakan tradisi makan bersama dengan menyantap hidangan lezat di atas daun pisang, menciptakan ikatan yang erat di antara semua yang hadir. <br>
+        Kami menawarkan berbagai pilihan hidangan liwetan yang menggugah selera, seperti nasi liwet dengan beragam lauk seperti ayam goreng, tahu tempe, sambal, dan sayuran segar. Rasakan kebersamaan dalam setiap suapan dan nikmati momen yang tak terlupakan bersama Warung Toeti.
+    </p>
+</div>
+
+<div class="contact-artikel">
+    <h4>Grab your own now</h4>
+    <p>
+        Warung Toeti for rescue, Open order for All Event's
+    </p>
+    <a href="menutumpeng.html" target="_self" class="contact-link">Lihat Menu</a> 
+</div>
+
+
+</body>
+</html>

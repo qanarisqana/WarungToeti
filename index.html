@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Toeti</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/faviocn2.jpeg">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/cb1cace6d3.js" crossorigin="anonymous"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- navbar -->
+<nav id="navbar" class="navbar">
+    <img src="images/logowarungtoeti2.png" alt="Logo">
+    
+    <div class="navbar-nav">
+        <a href="#home"> Home </a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+
+        <!-- Dropdown Menu for Products -->
+        <div class="dropdown">
+            <button class="dropbtn" style="text-shadow: 1px 1px 2px black;"> Product <i class="fa-solid fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="menunasi.html">Nasi Kotak</a>
+                <a href="menutumpeng.html">Tumpeng</a>
+                <a href="menukudapan.html">Kudapan</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar-extra">
+        <a href="menukudapan.html" id="shopping-cart"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="index.html#contact" id="customer-support"><i class="fa-solid fa-headset"></i></a>
+    </div>
+</nav>
+
+<!-- javascrip navbar -->
+<script type="text/javascript">
+    var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", function(){
+        var scrollTop = window.pageYOffset || document
+            .documentElement.scrollTop;
+        if (scrollTop > lastScrollTop){
+            navbar.style.top='-80px';
+        } else {
+            navbar.style.top="0";
+        }
+            lastScrollTop = scrollTop;
+    })
+</script>
+<!-- navbar end -->
+    
+<!-- hero section -->
+ <section class="hero" id="home">
+    <main class="content">
+        <h1> Bingung pilih makanan untuk penuhi acaramu? <span> Warung Toeti</span> solusinya</h1>
+        <p> Fresh from the oven and can make you love at the first bite</p>
+        <a href="#contact" class="cta"> Pesan Sekarang </a>
+
+    </main>
+ </section>
+<!-- hero section end -->
+
+<!-- about section -->
+ <section id="about" class="about">
+    <h2><span>About</span> Us</h2>
+
+    <div class="row">
+        <div class="about-img">
+            <img src="images/aboutus1.jpeg" alt="Tentang kami">
+        </div>
+        <div class="content">
+            <h3>Mengapa Harus Warung Toeti?</h3>
+            <p> Sejak 2007, kami telah menjadi mitra terpercaya dalam menyediakan layanan katering berkualitas. Dengan lebih dari 15 tahun pengalaman, Kami adalah solusi catering yang sempurna untuk berbagai kebutuhan</p>
+            <p> Dengan beragam pilihan menu makanan yang halal dan lezat, kami menawarkan cita rasa istimewa tanpa harus merogoh kocek dalam-dalam. Kebersihan dan keamanan adalah prioritas utama kami; setiap hidangan kami disiapkan dengan standar kebersihan yang ketat untuk memastikan kepuasan dan kesejahteraan disetia gigitan Anda.</p>
+        </div>
+    </div>
+ </section>
+<!-- abaout section end -->
+
+<!--layanan section  -->
+<section id="layanan" class="layanan">
+    <h2><span>Our</span> Services</h2>
+    <p> Sesuaikan dengan kebutuhan mu! Beragam pilihan untuk segala acara dan kebutuhan anda.</p>
+
+    <div class="row">
+        <div class="layanan-item">
+          <img src="images/kudapanpict.jpg" alt="Kudapan">
+          <h3>Teman Kudapan</h3>
+          <p>Aneka ragam jajanan pasar yang diolah dengan mempertahankan cita rasa tradisionalnya.<br> 
+            <a href="artkudapan.html" id= "arrow-right"> <i>Baca Selengkapnya</i> <i class="fa-solid fa-arrow-right" style="color: #fdd377;"></i></a>
+            </br></p>
+        </div>
+        <div class="layanan-item">
+          <img src="images/tumpeng1.jpg" alt="Tumpeng">
+          <h3>Aneka Tumpeng</h3>
+          <p>Bergabagai sajian tumpeng dan tampah yang diolah dengan kualitas terbaik.<br> 
+            <a href="arttumpeng.html" id= "arrow-right"> <i>Baca Selengkapnya</i> <i class="fa-solid fa-arrow-right" style="color: #fdd377;"></i></a>
+            </br></p>
+        </div>
+        <div class="layanan-item">
+          <img src="images/nasibox.jpg" alt="Nasi Kotak">
+          <h3>Nasi Kotak</h3>
+          <p>Pilihan menu hemat yang di imbangi dengan cita rasa tradisional.<br> 
+            <a href="artnasi.html" id= "arrow-right"> <i>Baca Selengkapnya</i> <i class="fa-solid fa-arrow-right" style="color: #fdd377;"></i></a>
+            </br></p>
+        </div>
+      </div>
+</section>
+<!-- layanan section end -->
+
+<!-- gallery section -->
+<section id="gallery" class="gallery">
+    <h2>Our's <span>Best</span> Product</h2>
+    <p> Sesuaikan dengan kebutuhan mu! Beragam pilihan untuk segala acara dan kebutuhan anda.</p>
+
+    <div class="slider">
+        <div class="list"> 
+            <div class="item">
+                <img src="images/nasiliwet2.jpg" alt="gambar gallery"> 
+            </div>
+            <div class="item">
+                <img src="images/tampah1.jpg" alt="gambar gallery 2">
+            </div>
+            <div class="item">
+                <img src="images/tumpeng(1).jpg" alt="gambar gallery 6">
+            </div>
+            <div class="item">
+                <img src="images/snackbox.jpg" alt="gambar gallery 3">
+            </div>
+            <div class="item">
+                <img src="images/tampahrebusan.jpg" alt="gambar gallery 4">
+            </div>
+            <div class="item">
+                <img src="images/nasiboxedit.jpg" alt="gambar gallery 5">
+            </div>
+        </div>
+
+        <!-- button prev dan next -->
+         <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+         </div>
+
+         <!-- dots button -->
+          <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+    </div>
+
+    <div class="contact-artikel">
+        <h4>Grab your own now</h4>
+        <p>
+            Warung Toeti for rescue, Open order for All Event's
+        </p>
+        <a href="menukudapan.html" target="_self"" class="contact-link">Lihat Menu</a> 
+    </div>
+
+</section>
+<!-- gallery section end -->
+
+<!-- testimoni section -->
+<section class="testimonials">
+    <h2>Testimoni Pelanggan</h2>
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <p>"Warung Toeti benar-benar menyelamatkan acara tunangan kami. Buah tangga nasi box yang variatif dan lezat membuat semua tamu terkesan. Layanan profesional dan tampilan hidangan yang cantik membuat momen istimewa kami benar-benar sempurna!"</p>
+            <div class="profile">
+                <img src="images/profilepict.jpg" alt="Ayu S.">
+                <h3>Andhika S.</h3>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <p>"Sebagai ibu rumah tangga, saya selalu mengandalkan Warung Toeti untuk menu harian saya. Rasanya yang enak, porsi yang cukup, dan pilihan menu yang beragam membuat setiap hari cemilan sore menjadi momen yang dinantikan."</p>
+            <div class="profile">
+                <img src="images/profilepict.jpg" alt="Andika R.">
+                <h3>Jessics R.</h3>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <p>"Saya sangat senang telah memilih Warung Toeti untuk acara ulang tahun anak saya. Paket tumpeng yang mereka tawarkan sangat lengkap dan lezat. Anak-anak dan orang dewasa sama-sama menikmati hidangan yang disajikan. Terima kasih!"</p>
+            <div class="profile">
+                <img src="images/profilepict.jpg" alt="Maya W.">
+                <h3>Maya W.</h3>
+                <div class="rating">
+                    ★★★★☆
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- testimoni secyion end -->
+
+<!-- pesan sekarang section -->
+<section id="contact" class="order">
+    <h2>Order<span> now</span>, eat <span> now.</span></h2>
+
+    <div class="order-now">
+        <h1> Jam Operasional <i class="fa-solid fa-clock" style="color: #fdd377;"></i> </h1>
+        
+        <div class="order-container">
+            <p> Senin - Jumat   : 06.00 WIB- 19.00 WIB <br>
+                Sabtu           : 09.00 WIB- 15.00 WIB <br>
+                Hari minggu dan Hari besar nasional <strong>tutup.</strong>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- pesan sekarang section end -->
+<div class="container">
+    <div class="info-section">
+        <h2>Informasi Pemesanan</h2>
+        <p><i class="fa fa-map-marker"></i> Perm. Polonia Otista 82, Jl. Puskesmas Bidaracina 1 No.15</p>
+        <p><i class="fa fa-envelope"></i> contact@warungtoeti</p>
+        <p><i class="fa fa-phone"></i> 0821 1073 7770 (Tuti)</p>
+        <h3>Alamat Kitchen </h3>
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d774.6457383118502!2d106.86689939999998!3d-6.239175399999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f34333188951%3A0xc17116238973cf42!2sWarung%20Toeti!5e1!3m2!1sen!2sid!4v1732413786693!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                frameborder="0" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="http://wa.me/6282110737770"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/warungtoeti" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+            <a href="https://jakpreneur.jakarta.go.id/index" target="_blank" rel="noopener noreferrer" ><i class="fa fa-facebook"></i></a>
+            <a href="https://eorder-bppbj.jakarta.go.id/web?#id=31810&action=293&model=res.partner&view_type=form&menu_id=174" target="_blank" rel="noopener noreferrer""><i class="fa fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h2>Kirim Pesan</h2>
+        <p>Hubungi kami untuk informasi lengkap mengenai layanan catering yang sedang Anda butuhkan.</p>
+        <form>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<!-- footer section -->
+ <!-- Footer Section -->
+ <footer class="footer">
+    <div class="container">
+        <!-- Logo and Description -->
+        <div class="footer-column">
+            <img src="images/logowarungtoeti2.png" alt="warungtoeti Logo" class="footer-logo">
+            <p>
+                Nikmati menu pilihan yang beragam, mulai dari hidangan tradisional dengan cita rasa autentik hingga kreasi inovatif yang menjajakan sensasi baru bagi selera Anda.
+            </p>
+        </div>
+
+        <!-- Kontak -->
+        <div class="footer-column">
+            <h3>Kontak</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Perm. Polonia Otista 82, <br>
+                Jl. Puskesmas Bidaracina 1 No.15,<br> Bidaracina, Jakarta Timur</p>
+            <p><i class="fas fa-envelope"></i> contact@warungtoeti</p>
+            <p><i class="fas fa-phone-alt"></i> 0821 1073 7770 (Tuti)</p>
+            <br>
+            <h3>Home</h3>
+            <p><a href="index.html #about">Tentang Kami</a></p>
+            <p><a href="index.html #contact">Kontak Kami</a></p>
+        </div>
+
+        <!-- Daftar Menu -->
+        <div class="footer-column">
+            <h3>Daftar Menu</h3>
+            <ul>
+                <li>Aneka kudapan</li>
+                <li>Snack box</li>
+                <li>Aneka tumpeng</li>
+                <li>Aneka tampah </li>
+                <li>Nasi box</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+        <p>COPYRIGHT © 2024 WARUNG TOETI | DESIGN BY AZKA RISQANA AZ ZAHRAH</p>
+    </div>
+</footer>
+
+
+
+
+<!-- javascript -->
+    <script src="script.js"></script>
+<!-- javascript -->
+
+</body>
+</html>
